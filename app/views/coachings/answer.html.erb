@@ -1,2 +1,12 @@
 <h1>Coachings#answer</h1>
-<p>Find me in app/views/coachings/answer.html.erb</p>
+<h2><%= @response %></h2>
+
+<% if @response != nil %>
+  <%= link_to "Ask another question", root_path %>
+<% else %>
+  <p>You fed me up</p>
+  <%= link_to "Go back to start", root_path %>
+<% end %>
+
+
+

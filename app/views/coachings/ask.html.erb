@@ -1,2 +1,7 @@
 <h1>Coachings#ask</h1>
-<p>Find me in app/views/coachings/ask.html.erb</p>
+<%= form_tag("/answer", method: "get") do %>
+  <%= label_tag(:query, "What do you want to do today?") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Ask") %>
+<% end %>
+
