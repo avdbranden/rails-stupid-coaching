@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'coaching_controller/answer'
+  get '/answer', to: 'CoachingController#answer'
 
   get 'coaching_controller/ask'
 
